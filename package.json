@@ -1,0 +1,29 @@
+{
+  "name": "recipefinder",
+  "version": "1.0.0",
+  "description": "RecipeFinder",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VasVarouhas/RecipeFinder.git"
+  },
+  "keywords": [
+    "recipe",
+    "search",
+    "find"
+  ],
+  "author": "VasVarouhas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VasVarouhas/RecipeFinder/issues"
+  },
+  "homepage": "https://github.com/VasVarouhas/RecipeFinder#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.2.2"
+  }
+}
