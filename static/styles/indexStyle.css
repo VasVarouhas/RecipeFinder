@@ -1,30 +1,34 @@
-html{
-  background-color: rgb(208, 194, 176)
-
+html {
+  background-color: rgb(208, 194, 176);
 }
+
 @media screen and (max-width: 768px) {
   .indexTop {
-    height: auto; 
+   
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
   }
-  
+
   .title1 {
-    font-size: 0.8rem; 
+    font-size: 5vw;
   }
-  #recipeCards {
-    grid-template-columns: 1fr;
-  }
+
 }
+
 html, body {
   margin: 0;
   padding: 0;
 }
+
 .indexTop {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   background-color: rgb(208, 194, 176);
-  height: 15em;
-  padding-right: 4em; 
+  height: 15vw;
+  padding-right: 8vw; 
 }
 
 .title1 {
@@ -32,10 +36,10 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  overflow: hidden; 
-  white-space: nowrap; 
-  text-overflow: ellipsis; 
-  font-size: 5.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 5vw; /* Using vw unit for responsive font size */
 }
 
 
@@ -77,43 +81,54 @@ html, body {
 }
 #search-form {
   display: flex;
+ 
   align-items: center;
   justify-content: center;
-  margin: 1em;
+
+  margin: 1em auto;;
+  width: 50%;
+  margin-bottom: 2em;
 }
 
 #search-input {
   padding: 0.5em;
-  font-size: 1em;
-  border: 1px solid #ccc;
+  font-size: 1.5em;
+  border: 0.2em solid #999;
   border-radius: 0.4em;
   margin-right: 0.5em;
   flex: 1;
 }
 
 #search-input::placeholder {
-  background-color: cornsilk;
-  color: #aaa;
+  color: #1d1d1d;
 }
 
 #search-input:focus {
   outline: none;
-  border-color: #6c63ff;
+  border-color: #a8a8a8;
 }
 
 #search-button {
-  padding: 0.5em 1em;
-  background-color: #6c63ff;
+ 
+  padding: 0.5em;
+  background-color: #8aac81;
   color: #fff;
   border: none;
   border-radius: 0.4em;
-  font-size: 1em;
+  font-size: 1.5em;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 
 #search-button:hover {
-  background-color: #534de6;
+  background-color: #43c354;
 }
+
+#search-input::placeholder {
+  color: #999;
+}
+
 #logo1{
  margin-right: 3em;
   width: 1em; 
