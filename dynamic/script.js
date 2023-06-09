@@ -22,16 +22,32 @@ function displaySearchResults(results) {
 
     // Create the card's HTML structure based on your desired layout
     // Use recipe data to fill in the card's information
-    // Example:
-    card.innerHTML = `
-      <img src="${recipe.image}" alt="Recipe Image">
-      <h2 class="recipe-title">${recipe.title}</h2>
-      <ul class="recipe-ingredients">
-        ${recipe.ingredients.map((ingredient) => `<li>${ingredient}</li>`).join('')}
-      </ul>
-      <p class="recipe-instructions">${recipe.instructions}</p>
-    `;
+
+    const recipeImage = document.createElement('img');
+    recipeImage.src = recipe.image; // Use the actual image URL from the API response
+    recipeImage.alt = 'Recipe Image';
+    card.appendChild(recipeImage);
+
+    const recipeTitle = document.createElement('h2');
+    recipeTitle.className = 'recipe-title';
+    recipeTitle.textContent = recipe.title;
+    card.appendChild(recipeTitle);
+
+    const recipeIngredients = document.createElement('ul');
+    recipeIngredients.className = 'recipe-ingredients';
+    recipe.ingredients.forEach((ingredient) => {
+      const ingredientItem = document.createElement('li');
+      ingredientItem.textContent = ingredient;
+      recipeIngredients.appendChild(ingredientItem);
+    });
+    card.appendChild(recipeIngredients);
+
+    const recipeInstructions = document.createElement('p');
+    recipeInstructions.className = 'recipe-instructions';
+    recipeInstructions.textContent = recipe.instructions;
+    card.appendChild(recipeInstructions);
 
     recipeCardsContainer.appendChild(card);
   });
 }
+
