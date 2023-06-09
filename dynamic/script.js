@@ -14,6 +14,11 @@ document.getElementById('search-form').addEventListener('submit', async (e) => {
 function displaySearchResults(results) {
   const recipeCardsContainer = document.getElementById('recipeCards');
   recipeCardsContainer.innerHTML = ''; // Clear the existing recipe cards
+    // Check if results is an array
+    if (!Array.isArray(results)) {
+      console.error('Invalid results data:', results);
+      return; // Exit the function if results is not an array
+    }
 
   // Create recipe cards based on the results
   results.forEach((recipe) => {
