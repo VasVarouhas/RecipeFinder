@@ -4,7 +4,8 @@ document.getElementById('search-form').addEventListener('submit', async (e) => {
   const searchQuery = document.getElementById('search-input').value;
 
   // Make an AJAX request to the server's search endpoint
-  const response = await fetch(`https://season-kind-canvas.glitch.me/api/search?query=${encodeURIComponent(searchQuery)}`);
+  const response = await fetch('https://season-kind-canvas.glitch.me/api/search?query=' + encodeURIComponent(searchQuery));
+
   const data = await response.json();
 
   // Update the UI with the search results
