@@ -3,13 +3,22 @@ document.getElementById('search-form').addEventListener('submit', async (e) => {
 
   const searchQuery = document.getElementById('search-input').value;
 
-  // Make an AJAX request to the server's search endpoint
-  const response = await fetch('https://season-kind-canvas.glitch.me/api/search?query=' + encodeURIComponent(searchQuery));
+  try {
+    // Make an AJAX request to the server's search endpoint
+    const response = await fetch(`https://season-kind-canvas.glitch.me/api/search?query=${encodeURIComponent(searchQuery)}`);
+    
+    if (!response.ok) {
+      throw new Error('Request failed');
+    }
+    
+    const data = await response.json();
 
-  const data = await response.json();
-
-  // Update the UI with the search results
-  displaySearchResults(data.results);
+    // Update the UI with the search results
+    displaySearchResults(data.results);
+  } catch (error) {
+    console.error(error);
+    // Handle error gracefully, e.g., display an error message to the user
+  }
 });
 
 function displaySearchResults(results) {
