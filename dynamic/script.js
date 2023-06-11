@@ -5,7 +5,7 @@ document.getElementById('search-form').addEventListener('submit', async (e) => {
 
   try {
     // Make an AJAX request to the server's search endpoint
-    const response = await fetch(`https://season-kind-canvas.glitch.me/api/search?query=${encodeURIComponent(searchQuery)}`);
+    const response = await fetch(`https://your-domain.com/api/search?query=${encodeURIComponent(searchQuery)}`);
     
     if (!response.ok) {
       throw new Error('Request failed');
