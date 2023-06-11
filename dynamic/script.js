@@ -5,7 +5,7 @@ document.getElementById('search-form').addEventListener('submit', async (e) => {
 
   try {
     // Make an AJAX request to the server's search endpoint
-    const response = await fetch(`https://your-domain.com/api/search?query=${encodeURIComponent(searchQuery)}`);
+    const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${encodeURIComponent(searchQuery)}`);
     
     if (!response.ok) {
       throw new Error('Request failed');
