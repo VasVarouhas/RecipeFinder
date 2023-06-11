@@ -13,6 +13,13 @@ document.getElementById('search-form').addEventListener('submit', async (e) => {
     
     const data = await response.json();
 
+    console.log(data); // Output the entire response data object
+    
+    // Check the structure of the data and log specific properties for verification
+    data.results.forEach((recipe) => {
+      console.log(recipe.title); // Output the title of each recipe
+    });
+    
     // Update the UI with the search results
     displaySearchResults(data.results);
   } catch (error) {
@@ -24,11 +31,11 @@ document.getElementById('search-form').addEventListener('submit', async (e) => {
 function displaySearchResults(results) {
   const recipeCardsContainer = document.getElementById('recipeCards');
   recipeCardsContainer.innerHTML = ''; // Clear the existing recipe cards
-    // Check if results is an array
-    if (!Array.isArray(results)) {
-      console.error('Invalid results data:', results);
-      return; // Exit the function if results is not an array
-    }
+  // Check if results is an array
+  if (!Array.isArray(results)) {
+    console.error('Invalid results data:', results);
+    return; // Exit the function if results is not an array
+  }
 
   // Create recipe cards based on the results
   results.forEach((recipe) => {
@@ -65,4 +72,5 @@ function displaySearchResults(results) {
     recipeCardsContainer.appendChild(card);
   });
 }
+
 
