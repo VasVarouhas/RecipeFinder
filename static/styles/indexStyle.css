@@ -159,12 +159,14 @@ margin:auto;
 .recipe-card img {
   /* Styles for the image */
   width: 100%;
+  
 }
 
 .recipe-card h2 {
   /* Styles for the title */
   font-weight: bold;
   margin-bottom: 0.625em;
+  font-size: 1.75em;
 }
 
 .recipe-card ul {
@@ -176,6 +178,7 @@ margin:auto;
 .recipe-card li {
   /* Styles for the list items */
   margin-bottom: 0.3125em;
+  font-size: 1.25em;
 }
 
 .recipe-card a {
