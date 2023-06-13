@@ -150,22 +150,21 @@ margin:auto;
 
 .recipe-card {
   /* Styles for the card container */
-  background-color: #f1f1f1;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #eaa5b9;
+  padding: 1em;
+  border-radius: 0.3125em;
+  box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1);
 }
 
 .recipe-card img {
   /* Styles for the image */
   width: 100%;
-  border-radius: 5px;
 }
 
 .recipe-card h2 {
   /* Styles for the title */
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
 }
 
 .recipe-card ul {
@@ -176,19 +175,21 @@ margin:auto;
 
 .recipe-card li {
   /* Styles for the list items */
-  margin-bottom: 5px;
+  margin-bottom: 0.3125em;
 }
 
 .recipe-card a {
   /* Styles for the instructions link */
   display: block;
   text-align: center;
-  margin-top: 10px;
-  color: #555;
+  margin-top: 0.625em;
+  color: #148729;
   text-decoration: none;
+  font-size: 1.25em;
+  font-weight: 600;
 }
 
 .recipe-card a:hover {
-  color: #333;
+  color: #1cba39;
 }
 
