@@ -159,7 +159,7 @@ margin:auto;
 .recipe-card img {
   /* Styles for the image */
   width: 100%;
-  
+
 }
 
 .recipe-card h2 {
@@ -185,7 +185,8 @@ margin:auto;
   /* Styles for the instructions link */
   display: block;
   text-align: center;
-  margin-top: 0.625em;
+  margin-top: auto;
+  margin-bottom: 0.3125em;
   color: #148729;
   text-decoration: none;
   font-size: 1.25em;
