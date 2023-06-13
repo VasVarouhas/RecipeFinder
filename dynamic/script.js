@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       try {
           // Make a GET request to your server's recipe search endpoint
-          const response = await fetch(`/api/search?query=${query}`);
+          const response = await fetch(`https://season-kind-canvas.glitch.me/api/search?query=${query}`);
           const data = await response.json();
 
           const { results } = data;
