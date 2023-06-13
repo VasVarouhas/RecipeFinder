@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(208, 194, 176);
+  background-color: rgb(236, 191, 107);
 }
 
 @media screen and (max-width: 768px) {
@@ -150,7 +150,7 @@ margin:auto;
 
 .recipe-card {
   /* Styles for the card container */
-  background-color: #eeba8d;
+  background-color: #e2b29f;
   padding: 1em;
   border-radius: 0.3125em;
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1);
