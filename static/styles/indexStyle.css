@@ -150,7 +150,7 @@ margin:auto;
 
 .recipe-card {
   /* Styles for the card container */
-  background-color: #eaa5b9;
+  background-color: #eeba8d;
   padding: 1em;
   border-radius: 0.3125em;
   box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1);
@@ -187,13 +187,13 @@ margin:auto;
   text-align: center;
   margin-top: auto;
   margin-bottom: 0.3125em;
-  color: #148729;
+  color: #117423;
   text-decoration: none;
   font-size: 1.25em;
   font-weight: 600;
 }
 
 .recipe-card a:hover {
-  color: #1cba39;
+  color: #28b742b2;
 }
 
